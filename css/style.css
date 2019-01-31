@@ -1,0 +1,177 @@
+
+
+/* GENERAL */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1500px; 
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+input{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* HEADER */
+.header{
+    background-color: #ED4D06;
+    color: white;
+}
+.header .spacing{
+    display: flex;
+    padding: 5px 0px;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.header .container span{
+    margin-left: 5px;
+}
+/* INTRODUCTION */
+.introduction{
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 55px;
+}
+h3{
+   border-bottom: 2px solid #ED4D06;
+   padding-bottom: 10px;
+   margin-top: 30px;
+}
+.introduction h1 .orange{
+    color: #ED4D06;
+}
+.introduction button{
+    margin-top: 20px;
+}
+/* PROGRAMS */
+.programs, .outdoor{
+    background-color:#15191c;
+}
+.programs h1{
+    text-align: center;
+    padding: 10px 0px;
+    color: #ED4D06;
+    margin-top: 50px;
+}
+.programs p, .outdoor p{
+    font-size: 10px;
+}
+
+.programs .thumb img, .programs img,
+.outdoor img{
+    width: 100%;
+}
+.programs .correction{
+    padding: 0;
+}
+.programs .space{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+    align-items: center;
+}
+.programs .thumb{
+    position: relative;
+}
+.programs .thumb .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width:0;
+    height:100%;
+    opacity: 0;
+    transition: 1s;
+    background-color: transparent;
+}
+.overlay .text{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    padding-top:25%;
+}
+.thumb:hover .overlay {
+    opacity: 0.5;
+    width:100%;
+    bottom:0px;
+    background-color: #ED4D06;
+    transition: 1s;
+}
+/* OUTDOOR */
+.outdoor h1{
+    text-align: center;
+    margin-top: 70px;
+}
+.outdoor .space{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+}
+/* OUTDOOR ./*
+
+/* FORM */
+.form{
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.form h3{
+    background-color: #23232373;
+    text-align: center;
+    margin-bottom: 40px;
+} 
+.form .align{
+    display: flex;
+    justify-content: center;
+}
+.form .btn-possition{
+    text-align: center;
+}
+/* FORM ./*/
+/* FOOTER */
+.footer{
+    background-color: #ED4D06;
+    text-align: center;
+    padding: 20px;
+}
+.footer span:not(:last-child){
+    border-right: 2px solid;
+    padding-right: 10px;
+    margin: 0px 5px;
+}
+.footer i{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer .container .row a, a{
+    color: black;
+    text-decoration: none;
+}
+/* FOOTER ./*/
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .order{
+        order: 1;
+    }
+   }
+ 
